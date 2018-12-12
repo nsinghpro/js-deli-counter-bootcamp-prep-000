@@ -5,7 +5,13 @@ var katzDeli = [];
   katzDeli.push(`${name}`);
   return(`Welcome, ${name}. You are number ${katzDeli.length} in line.`);
 }
-
+var counter = 0
+function takeANumbertwo(katzDeliLine){
+  counter++
+  katzDeliLine.push(counter);
+  return('Welcome, your number ${counter}');
+}
+ 
  function nowServing(katzDeli) {
   let i = 0;
   while (i < katzDeli.length) {
